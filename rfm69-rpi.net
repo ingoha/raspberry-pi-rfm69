@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/ingo/Desktop/Projekt-Begleitmaterial/UberHA/pcb-rfm-raspi/rfm69-rpi.sch)
-    (date "Mi 29 Apr 2020 14:55:48 CEST")
+    (date "Mi 29 Apr 2020 15:35:38 CEST")
     (tool "Eeschema 5.1.5-52549c5~86~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -69,7 +69,7 @@
       (tstamp 57D599F3))
     (comp (ref J1)
       (value RPi_GPIO)
-      (footprint tinkerforge:raspberrypi2)
+      (footprint pcb-rfm-raspi:raspberrypi2)
       (libsource (lib rfm69-rpi-rescue) (part RPi_GPIO) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 57D57C63))
