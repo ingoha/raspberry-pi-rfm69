@@ -1,39 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:rfm69-rpi-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:agg-kicad
-LIBS:RPi_Hat-cache
-LIBS:maxim
-LIBS:rfm69-rpi-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -48,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RFM69 IC1
+L rfm69-rpi-rescue:RFM69 IC1
 U 1 1 57D5706D
 P 2200 1750
 F 0 "IC1" H 1900 2250 50  0000 L CNN
@@ -59,7 +25,7 @@ F 3 "http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf" H 1900 1050 50  0001 L CN
 	1    0    0    -1  
 $EndComp
 $Comp
-L JUMPER JP1
+L rfm69-rpi-rescue:JUMPER JP1
 U 1 1 57D58747
 P 3950 1150
 F 0 "JP1" H 3950 1300 50  0000 C CNN
@@ -70,7 +36,7 @@ F 3 "" H 3950 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR01
+L rfm69-rpi-rescue:+3V3 #PWR01
 U 1 1 57D5883F
 P 3650 1150
 F 0 "#PWR01" H 3650 1000 50  0001 C CNN
@@ -81,7 +47,7 @@ F 3 "" H 3650 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR02
+L rfm69-rpi-rescue:+5V #PWR02
 U 1 1 57D5885C
 P 6400 1350
 F 0 "#PWR02" H 6400 1200 50  0001 C CNN
@@ -94,9 +60,8 @@ $EndComp
 Wire Wire Line
 	6400 1350 6400 1450
 Connection ~ 6400 1350
-Connection ~ 6400 1450
 $Comp
-L Earth #PWR03
+L rfm69-rpi-rescue:Earth #PWR03
 U 1 1 57D588B8
 P 6600 1550
 F 0 "#PWR03" H 6600 1300 50  0001 C CNN
@@ -107,7 +72,7 @@ F 3 "" H 6600 1550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR04
+L rfm69-rpi-rescue:Earth #PWR04
 U 1 1 57D588D5
 P 6600 2250
 F 0 "#PWR04" H 6600 2000 50  0001 C CNN
@@ -118,13 +83,13 @@ F 3 "" H 6600 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 1550 6650 1550
+	6400 1550 6600 1550
 Wire Wire Line
 	6400 1950 6600 1950
 Wire Wire Line
 	6400 2250 6600 2250
 $Comp
-L Earth #PWR05
+L rfm69-rpi-rescue:Earth #PWR05
 U 1 1 57D5892A
 P 4500 3250
 F 0 "#PWR05" H 4500 3000 50  0001 C CNN
@@ -135,7 +100,7 @@ F 3 "" H 4500 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR06
+L rfm69-rpi-rescue:Earth #PWR06
 U 1 1 57D58956
 P 4300 2550
 F 0 "#PWR06" H 4300 2300 50  0001 C CNN
@@ -148,7 +113,7 @@ $EndComp
 Wire Wire Line
 	4500 2550 4300 2550
 $Comp
-L Earth #PWR07
+L rfm69-rpi-rescue:Earth #PWR07
 U 1 1 57D58989
 P 6600 2750
 F 0 "#PWR07" H 6600 2500 50  0001 C CNN
@@ -159,7 +124,7 @@ F 3 "" H 6600 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR08
+L rfm69-rpi-rescue:Earth #PWR08
 U 1 1 57D589A6
 P 6600 2950
 F 0 "#PWR08" H 6600 2700 50  0001 C CNN
@@ -174,7 +139,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 2950 6600 2950
 $Comp
-L Earth #PWR09
+L rfm69-rpi-rescue:Earth #PWR09
 U 1 1 57D589DC
 P 4300 1750
 F 0 "#PWR09" H 4300 1500 50  0001 C CNN
@@ -199,7 +164,7 @@ SCK
 Wire Wire Line
 	2600 1950 3000 1950
 $Comp
-L Earth #PWR010
+L rfm69-rpi-rescue:Earth #PWR010
 U 1 1 57D58B19
 P 2700 2050
 F 0 "#PWR010" H 2700 1800 50  0001 C CNN
@@ -215,7 +180,7 @@ Wire Wire Line
 	2600 2050 2700 2050
 Connection ~ 2700 2050
 $Comp
-L +3V3 #PWR011
+L rfm69-rpi-rescue:+3V3 #PWR011
 U 1 1 57D58B87
 P 1350 2050
 F 0 "#PWR011" H 1350 1900 50  0001 C CNN
@@ -228,7 +193,7 @@ $EndComp
 Wire Wire Line
 	1800 2050 1350 2050
 $Comp
-L LD1117S33TR IC5
+L rfm69-rpi-rescue:LD1117S33TR IC5
 U 1 1 57D58C40
 P 9950 5150
 F 0 "IC5" H 9950 5400 50  0000 C CNN
@@ -239,7 +204,7 @@ F 3 "" H 9950 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C1
+L rfm69-rpi-rescue:CP C1
 U 1 1 57D58E40
 P 9200 5250
 F 0 "C1" H 9225 5350 50  0000 L CNN
@@ -250,7 +215,7 @@ F 3 "" H 9200 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C2
+L rfm69-rpi-rescue:CP C2
 U 1 1 57D58E7C
 P 10600 5250
 F 0 "C2" H 10625 5350 50  0000 L CNN
@@ -261,10 +226,10 @@ F 3 "" H 10600 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 5400 9200 5400
+	10600 5400 9950 5400
 Connection ~ 9950 5400
 $Comp
-L Earth #PWR012
+L rfm69-rpi-rescue:Earth #PWR012
 U 1 1 57D58ED7
 P 9950 5500
 F 0 "#PWR012" H 9950 5250 50  0001 C CNN
@@ -277,7 +242,7 @@ $EndComp
 Wire Wire Line
 	9950 5400 9950 5500
 $Comp
-L +3V3 #PWR013
+L rfm69-rpi-rescue:+3V3 #PWR013
 U 1 1 57D58F1B
 P 10600 5100
 F 0 "#PWR013" H 10600 4950 50  0001 C CNN
@@ -288,7 +253,7 @@ F 3 "" H 10600 5100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR014
+L rfm69-rpi-rescue:+5V #PWR014
 U 1 1 57D58F52
 P 9200 5100
 F 0 "#PWR014" H 9200 4950 50  0001 C CNN
@@ -299,9 +264,9 @@ F 3 "" H 9200 5100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 5100 9550 5100
+	9200 5100 9450 5100
 Wire Wire Line
-	10350 5100 10600 5100
+	10350 5100 10450 5100
 Connection ~ 10600 5100
 Connection ~ 9200 5100
 Text GLabel 4500 1650 0    60   BiDi ~ 0
@@ -309,7 +274,7 @@ ONEWIRE
 Wire Wire Line
 	2700 2050 2700 1850
 $Comp
-L RFM69 IC2
+L rfm69-rpi-rescue:RFM69 IC2
 U 1 1 57D59944
 P 2200 2950
 F 0 "IC2" H 1900 3450 50  0000 L CNN
@@ -320,7 +285,7 @@ F 3 "http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf" H 1900 2250 50  0001 L CN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RFM69 IC3
+L rfm69-rpi-rescue:RFM69 IC3
 U 1 1 57D59997
 P 2200 4150
 F 0 "IC3" H 1900 4650 50  0000 L CNN
@@ -331,7 +296,7 @@ F 3 "http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf" H 1900 3450 50  0001 L CN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RFM69 IC4
+L rfm69-rpi-rescue:RFM69 IC4
 U 1 1 57D599F3
 P 2200 5350
 F 0 "IC4" H 1900 5850 50  0000 L CNN
@@ -342,7 +307,7 @@ F 3 "http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf" H 1900 4650 50  0001 L CN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR015
+L rfm69-rpi-rescue:+3V3 #PWR015
 U 1 1 57D59A47
 P 1400 3250
 F 0 "#PWR015" H 1400 3100 50  0001 C CNN
@@ -353,7 +318,7 @@ F 3 "" H 1400 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR016
+L rfm69-rpi-rescue:+3V3 #PWR016
 U 1 1 57D59A83
 P 1400 4450
 F 0 "#PWR016" H 1400 4300 50  0001 C CNN
@@ -364,7 +329,7 @@ F 3 "" H 1400 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR017
+L rfm69-rpi-rescue:+3V3 #PWR017
 U 1 1 57D59AB5
 P 1400 5650
 F 0 "#PWR017" H 1400 5500 50  0001 C CNN
@@ -431,7 +396,7 @@ Text Label 2900 4350 2    31   ~ 0
 ANT_3
 Text Label 2900 5550 2    31   ~ 0
 ANT_4
-Text GLabel 6400 3150 2    59   Output ~ 0
+Text GLabel 6400 3150 2    59   Input ~ 0
 INT1
 Text GLabel 1800 1450 0    59   Output ~ 0
 INT1
@@ -463,7 +428,7 @@ Text GLabel 6400 2450 2    59   Output ~ 0
 NSS
 NoConn ~ 6400 2550
 $Comp
-L RPi_GPIO J1
+L rfm69-rpi-rescue:RPi_GPIO J1
 U 1 1 57D57C63
 P 4700 1350
 F 0 "J1" H 5450 1600 60  0000 C CNN
@@ -474,7 +439,7 @@ F 3 "" H 4700 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR018
+L rfm69-rpi-rescue:Earth #PWR018
 U 1 1 57D5B30D
 P 2700 3250
 F 0 "#PWR018" H 2700 3000 50  0001 C CNN
@@ -485,7 +450,7 @@ F 3 "" H 2700 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR019
+L rfm69-rpi-rescue:Earth #PWR019
 U 1 1 57D5B348
 P 2700 4450
 F 0 "#PWR019" H 2700 4200 50  0001 C CNN
@@ -496,7 +461,7 @@ F 3 "" H 2700 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR020
+L rfm69-rpi-rescue:Earth #PWR020
 U 1 1 57D5B383
 P 2700 5650
 F 0 "#PWR020" H 2700 5400 50  0001 C CNN
@@ -533,7 +498,7 @@ NoConn ~ 1800 5350
 NoConn ~ 1800 5450
 NoConn ~ 1800 5550
 $Comp
-L Earth #PWR021
+L rfm69-rpi-rescue:Earth #PWR021
 U 1 1 57D5BD89
 P 10400 5900
 F 0 "#PWR021" H 10400 5650 50  0001 C CNN
@@ -546,7 +511,7 @@ $EndComp
 Text GLabel 7200 1950 0    60   Input ~ 0
 NSS
 $Comp
-L Earth #PWR022
+L rfm69-rpi-rescue:Earth #PWR022
 U 1 1 57D588F2
 P 6600 1950
 F 0 "#PWR022" H 6600 1700 50  0001 C CNN
@@ -557,7 +522,7 @@ F 3 "" H 6600 1950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR023
+L rfm69-rpi-rescue:Earth #PWR023
 U 1 1 57D5C806
 P 7200 1750
 F 0 "#PWR023" H 7200 1500 50  0001 C CNN
@@ -580,10 +545,10 @@ NSS3
 Text GLabel 7200 2650 0    60   Output ~ 0
 NSS4
 Wire Wire Line
-	8000 1650 8000 1850
+	8000 1650 8000 1750
 Connection ~ 8000 1750
 $Comp
-L Earth #PWR024
+L rfm69-rpi-rescue:Earth #PWR024
 U 1 1 57D5D093
 P 8200 1750
 F 0 "#PWR024" H 8200 1500 50  0001 C CNN
@@ -596,7 +561,7 @@ $EndComp
 Wire Wire Line
 	8000 1750 8200 1750
 $Comp
-L CONN_01X02 P5
+L rfm69-rpi-rescue:CONN_01X02 P5
 U 1 1 57D5BC58
 P 10450 6100
 F 0 "P5" H 10450 6250 50  0000 C CNN
@@ -607,7 +572,7 @@ F 3 "" H 10450 6100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 74HC139 IC6
+L rfm69-rpi-rescue:74HC139 IC6
 U 1 1 57D5C7EA
 P 7600 2150
 F 0 "IC6" H 7300 2750 50  0000 L CNN
@@ -619,7 +584,7 @@ F 4 "2444981" H 7300 1250 50  0001 L CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR025
+L rfm69-rpi-rescue:+3V3 #PWR025
 U 1 1 57D5CACD
 P 7200 1650
 F 0 "#PWR025" H 7200 1500 50  0001 C CNN
@@ -664,9 +629,8 @@ NoConn ~ 8000 2250
 NoConn ~ 8000 2350
 Text GLabel 2600 1650 2    60   Output ~ 0
 MISO
-Connection ~ 4250 1150
 $Comp
-L PWR_FLAG #FLG026
+L rfm69-rpi-rescue:PWR_FLAG #FLG026
 U 1 1 57D5DF26
 P 6400 1350
 F 0 "#FLG026" H 6400 1445 50  0001 C CNN
@@ -676,9 +640,8 @@ F 3 "" H 6400 1350 50  0000 C CNN
 	1    6400 1350
 	0    1    1    0   
 $EndComp
-Connection ~ 2600 5650
 $Comp
-L R R1
+L rfm69-rpi-rescue:R R1
 U 1 1 57D5E166
 P 5200 4450
 F 0 "R1" V 5280 4450 50  0000 C CNN
@@ -689,7 +652,7 @@ F 3 "" H 5200 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR027
+L rfm69-rpi-rescue:+3V3 #PWR027
 U 1 1 57D5E2C4
 P 5200 4300
 F 0 "#PWR027" H 5200 4150 50  0001 C CNN
@@ -702,11 +665,10 @@ $EndComp
 Text GLabel 5100 4600 0    60   BiDi ~ 0
 ONEWIRE
 Wire Wire Line
-	5100 4600 5350 4600
+	5100 4600 5200 4600
 Connection ~ 6600 1550
-Connection ~ 2600 5450
 $Comp
-L JUMPER JP2
+L rfm69-rpi-rescue:JUMPER JP2
 U 1 1 57D5EA18
 P 9100 2050
 F 0 "JP2" H 9100 2200 50  0000 C CNN
@@ -721,7 +683,7 @@ NSS
 Text GLabel 9400 2050 2    60   Output ~ 0
 NSS1
 $Comp
-L COAX P4
+L rfm69-rpi-rescue:COAX P4
 U 1 1 57D5EE30
 P 3100 5550
 F 0 "P4" H 3100 5650 50  0000 C CNN
@@ -735,7 +697,7 @@ $EndComp
 Wire Wire Line
 	2600 4350 3000 4350
 $Comp
-L COAX P3
+L rfm69-rpi-rescue:COAX P3
 U 1 1 57D5F0BF
 P 3100 4350
 F 0 "P3" H 3100 4450 50  0000 C CNN
@@ -747,7 +709,7 @@ F 4 "1608592" H 3100 4070 50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L COAX P2
+L rfm69-rpi-rescue:COAX P2
 U 1 1 57D5F118
 P 3100 3150
 F 0 "P2" H 3100 3250 50  0000 C CNN
@@ -759,7 +721,7 @@ F 4 "1608592" H 3100 2870 50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L COAX P1
+L rfm69-rpi-rescue:COAX P1
 U 1 1 57D5F174
 P 3100 1950
 F 0 "P1" H 3100 2050 50  0000 C CNN
@@ -771,7 +733,7 @@ F 4 "1608592" H 3100 1670 50  0001 C CNN "Farnell"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR028
+L rfm69-rpi-rescue:Earth #PWR028
 U 1 1 57D5F21F
 P 3000 5650
 F 0 "#PWR028" H 3000 5400 50  0001 C CNN
@@ -782,7 +744,7 @@ F 3 "" H 3000 5650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR029
+L rfm69-rpi-rescue:Earth #PWR029
 U 1 1 57D5F266
 P 3000 4450
 F 0 "#PWR029" H 3000 4200 50  0001 C CNN
@@ -793,7 +755,7 @@ F 3 "" H 3000 4450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR030
+L rfm69-rpi-rescue:Earth #PWR030
 U 1 1 57D5F2BE
 P 3000 3250
 F 0 "#PWR030" H 3000 3000 50  0001 C CNN
@@ -804,7 +766,7 @@ F 3 "" H 3000 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR031
+L rfm69-rpi-rescue:Earth #PWR031
 U 1 1 57D5F37C
 P 3000 2050
 F 0 "#PWR031" H 3000 1800 50  0001 C CNN
@@ -815,7 +777,7 @@ F 3 "" H 3000 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DS18B20 U1
+L rfm69-rpi-rescue:DS18B20 U1
 U 1 1 57D60AD9
 P 5800 4700
 F 0 "U1" H 5650 4950 50  0000 C CNN
@@ -826,7 +788,7 @@ F 3 "" H 5650 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DS18B20 U2
+L rfm69-rpi-rescue:DS18B20 U2
 U 1 1 57D60D02
 P 5800 5350
 F 0 "U2" H 5650 5600 50  0000 C CNN
@@ -837,7 +799,7 @@ F 3 "" H 5650 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 4600 5350 5350
+	5350 4600 5350 4700
 Wire Wire Line
 	5350 4700 5500 4700
 Connection ~ 5200 4600
@@ -845,7 +807,7 @@ Wire Wire Line
 	5350 5350 5500 5350
 Connection ~ 5350 4700
 $Comp
-L +3V3 #PWR032
+L rfm69-rpi-rescue:+3V3 #PWR032
 U 1 1 57D60DFF
 P 5500 4600
 F 0 "#PWR032" H 5500 4450 50  0001 C CNN
@@ -856,7 +818,7 @@ F 3 "" H 5500 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR033
+L rfm69-rpi-rescue:+3V3 #PWR033
 U 1 1 57D60E4C
 P 5500 5250
 F 0 "#PWR033" H 5500 5100 50  0001 C CNN
@@ -867,7 +829,7 @@ F 3 "" H 5500 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR034
+L rfm69-rpi-rescue:Earth #PWR034
 U 1 1 57D60EE1
 P 5500 5450
 F 0 "#PWR034" H 5500 5200 50  0001 C CNN
@@ -878,7 +840,7 @@ F 3 "" H 5500 5450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR035
+L rfm69-rpi-rescue:Earth #PWR035
 U 1 1 57D60F2E
 P 5500 4800
 F 0 "#PWR035" H 5500 4550 50  0001 C CNN
@@ -889,7 +851,7 @@ F 3 "" H 5500 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TESTPAD TP2
+L rfm69-rpi-rescue:TESTPAD TP2
 U 1 1 57D66853
 P 10450 5100
 F 0 "TP2" H 10450 5150 50  0000 L CNN
@@ -900,7 +862,7 @@ F 3 "" H 10450 5100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TESTPAD TP1
+L rfm69-rpi-rescue:TESTPAD TP1
 U 1 1 57D668C3
 P 9450 5100
 F 0 "TP1" H 9450 5150 50  0000 L CNN
@@ -911,7 +873,7 @@ F 3 "" H 9450 5100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +5V #PWR036
+L rfm69-rpi-rescue:+5V #PWR036
 U 1 1 57D5BD4B
 P 10500 5900
 F 0 "#PWR036" H 10500 5750 50  0001 C CNN
@@ -924,7 +886,7 @@ $EndComp
 Connection ~ 10450 5100
 Connection ~ 9450 5100
 $Comp
-L PWR_FLAG #FLG037
+L rfm69-rpi-rescue:PWR_FLAG #FLG037
 U 1 1 57D7EA71
 P 6650 1550
 F 0 "#FLG037" H 6650 1645 50  0001 C CNN
@@ -935,7 +897,7 @@ F 3 "" H 6650 1550 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG038
+L rfm69-rpi-rescue:PWR_FLAG #FLG038
 U 1 1 57D7ED23
 P 4500 1100
 F 0 "#FLG038" H 4500 1195 50  0001 C CNN
@@ -948,4 +910,18 @@ $EndComp
 Wire Wire Line
 	4500 1100 4500 1350
 Connection ~ 4500 1350
+Wire Wire Line
+	9950 5400 9200 5400
+Wire Wire Line
+	8000 1750 8000 1850
+Wire Wire Line
+	6600 1550 6650 1550
+Wire Wire Line
+	5200 4600 5350 4600
+Wire Wire Line
+	5350 4700 5350 5350
+Wire Wire Line
+	10450 5100 10600 5100
+Wire Wire Line
+	9450 5100 9550 5100
 $EndSCHEMATC
